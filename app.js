@@ -133,7 +133,7 @@ const paypal = document.getElementById('paypal');
 const bitcoin = document.getElementById('bitcoin');
 paypal.style.display = 'none';
 bitcoin.style.display = 'none';
-payment.firstElementChild.style.display = 'none';
+payment.firstElementChild.disabled = 'disable';
 
 payment.addEventListener('change', (e)=>
 {
@@ -245,7 +245,7 @@ button.addEventListener('click', (e)=>
     }
     }
 
-    if (payment.value === 'credit card' || payment.value ==='select method')
+    if (payment.value === 'credit card')
         {
         if(isValidCardNumber(ccNum.value)===false)
         {
