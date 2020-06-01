@@ -134,6 +134,7 @@ const bitcoin = document.getElementById('bitcoin');
 paypal.style.display = 'none';
 bitcoin.style.display = 'none';
 payment.firstElementChild.disabled = 'disable';
+payment[1].selected = 'select';
 
 payment.addEventListener('change', (e)=>
 {
